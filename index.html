@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Canteen budget tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="app">
+
+  <!-- LOGIN -->
+  <section id="login">
+    <header>🍔 Canteen budget tracker</header>
+    <main>
+      <h2>Staff login</h2>
+      <p class="sub">Sign in to manage daily canteen finances.</p>
+      <label for="user">Username</label>
+      <input id="user" autocomplete="username">
+      <label for="pass">Password</label>
+      <input id="pass" type="password" autocomplete="current-password">
+      <div class="err" id="loginErr"></div>
+      <button class="btn" id="loginBtn">Login</button>
+    </main>
+  </section>
+
+  <!-- MAIN APP -->
+  <section id="main" class="hidden">
+    <header>🍔 Canteen budget tracker <button id="logout">Logout</button></header>
+    <main id="view"></main>
+    <nav id="nav">
+      <button data-tab="home">Home</button>
+      <button data-tab="sale">Sale</button>
+      <button data-tab="queue">Queue</button>
+      <button data-tab="products">Products</button>
+      <button data-tab="report">Report</button>
+    </nav>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
